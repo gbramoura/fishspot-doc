@@ -1,0 +1,29 @@
+\begin{table}[h!]
+    \centering
+    \caption[Rotas Disponiveis Continuação]{Rotas Disponiveis Continuação
+    \label{tab:tb-api-fishspot-others}}
+    \setlength{\extrarowheight}{4pt}
+    \begin{tabular}{|c|l|p{0.35\textwidth}|} 
+
+        % Ponto de Pesca ---------------
+        \hline
+        \multicolumn{3}{|c|}{\textbf{Ponto de Pesca}} \\
+        \hline
+        \textbf{Método HTTP} & \textbf{Endereço da Rota} & \textbf{Detalhes} \\
+        \hline
+        POST & /spot & Criar um ponto de pesca com base nos dados recebidos \\
+        \hline
+        GET & /spot & Consultar pontos de pesca cadastrados no sistema \\
+        \hline
+        GET & /spot/\{id\} & Consultar um ponto de pesca específico com base no identificador recebido \\
+        \hline
+        PUT & /spot/\{id\} & Alterar os dados de um ponto de pesca específico com base no identificador recebido \\
+        \hline
+        DELETE & /spot/\{id\} & Remover um ponto de pesca específico com base no identificador recebido \\
+        \hline
+        GET & /spot/by-user & Consultar os pontos de pesca com base no usuário autenticado \\
+        \hline
+        
+    \end{tabular}
+    \fonte{Fonte: Produzido pelo Autor}
+\end{table}

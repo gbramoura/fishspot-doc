@@ -1,0 +1,149 @@
+% DESENVOLVIMENTO--------------------------------------------------------
+
+\chapter{DESENVOLVIMENTO}
+\label{chap:desenvolvimento}
+
+\section{DIAGRAMA CASO DE USO}
+\label{sec:diagramacasodeuso}
+
+Neste tópico, será apresentado o diagrama de caso de uso, o qual é responsável por mostrar quais as funcionalidades de um sistema, e também quais os usuários com os quais interagem. De forma simples, é semelhante a um mapa que descreve os objetivos dos usuários ao usar o sistema.
+
+\begin{figure}[H]
+    \centering
+    \caption{Diagrama de Caso de Uso}
+    \label{fig:casoDeUso}
+    \includegraphics[scale=0.8]{./dados/figuras/diagrama-de-caso-de-uso.png}
+    \fonte{\citeonline{DrawIO}}
+\end{figure}
+
+
+\section{DIAGRAMA DE CLASSE}
+\label{sec:diagramadeclasse}
+
+O diagrama de classe constitui uma ferramenta muito utilizada para a modelagem estática e estrutural de um sistema. A representação das classes, dos atributos, dos métodos e também suas relações, de forma visual, facilita a compreensão da arquitetura lógica do software.
+
+\begin{figure}[H]
+    \centering
+    \caption{Diagrama de Classe}
+    \label{fig:casoDeUso}
+    \includegraphics[scale=0.70]{./dados/figuras/diagrama-de-classe.png}
+    \fonte{\citeonline{DrawIO}}
+\end{figure}
+
+\section{LEVANTAMENTO DE REQUISITOS}\label{sec:levantamentoderequisitos}
+
+De acordo com \citeonline{fernandoCunha2025}, os requisitos funcionais são aqueles que representam funcionalidades às quais estão relacionados a ações dentro da solução proposta. Enquanto os funcionais estão relacionados a ações, os requisitos não funcionais estão relacionados a descrever a forma como serão feitos.
+
+A \autoref{tab:tb-rf-realizar-login} aborda os requisitos para a realização do login, onde o pescador informa as credenciais de acesso, e recebe permissões para navegação dentro da aplicação. Além disso, são descritos seus requisitos não funcionais atrelados.
+
+\input{./dados/tabelas/rf-realizar-login}
+
+A \autoref{tab:tb-rf-visualizar-pontos-pesca} descreve os requisitos para visualizar um ponto de pesca, onde o usuário visualiza todos os pontos de pesca cadastrados, bem como seus detalhes. São detalhados também os requisitos não funcionais relacionados, dentre eles visualização do mapa, cálculos de geolocalização, localização atual do usuário e etc.
+
+\input{./dados/tabelas/rf-visualizar-pontos-de-pesca}
+
+Os requisitos relacionados ao cadastro de um novo ponto de pesca é representado pela \autoref{tab:tb-rf-novo-registro-pesca}, onde detalha as principais características da funcionalidade, também como seus requisitos não funcionais.
+
+\input{./dados/tabelas/rf-novo-registro-de-pesca}
+
+Na \autoref{tab:tb-rf-gerenciar-usuario}, os requisitos para gerenciar o usuário são descritos. Nesta funcionalidade é feito o gerenciamento dos dados do usuário, o gerenciamento esta atrelado a incluir, editar e também visualizar os dados dos pescadores.
+
+\input{./dados/tabelas/rf-gerenciar-usuario}
+
+A \autoref{tab:tb-rnf-autonomos} descreve os requisitos não-funcionais autônomos, estes que não são totalmente relacionados a uma funcionalidade e sim focados a outros aspectos da aplicação.
+
+\input{./dados/tabelas/rnf-autonomos}
+
+\section{DIAGRAMA DE ARQUITETURA DE SOFTWARE}
+\label{sec:diagramadearquiteturadesoftware}
+
+De acordo com a empresa \citeonline{AwsAmazon2024}, os diagramas de arquitetura fornecem vários benefícios; dentre eles, estão a redução de risco, eficiência e escalabilidade. Os diagramas ajudam a identificar os possíveis riscos no desenvolvimento, fornecendo uma visualização clara dos componentes e estruturas do sistema, possibilitando identificar também maneiras fáceis e eficientes de escalar o sistema. A \autoref{fig:diagramaArquiteturaDeSoftware} representa a arquitetura utilizada para criação do FishSpot.
+
+\begin{figure}[H]
+    \centering
+    \caption{Diagrama de Arquitetura}
+    \label{fig:diagramaArquiteturaDeSoftware}
+    \includegraphics[scale=0.38]{./dados/figuras/diagrama-de-arquitetura.png}
+    \fonte{\citeonline{DrawIO}}
+\end{figure}
+
+\section{PROTOTIPAGEM}
+\label{sec:prototipagem}
+
+Neste tópico vamos abordar a prototipagem, um processo extremamente necessário durante o desenvolvimento de um sistema. Segundo \citeonline{de2006prototipagem} a prototipagem tem a característica-chave de apresentar uma forma muito fácil de construir uma entidade temporária para que o produto possa ser visto é criticado, para então gerar novas melhorias.
+
+É possível visualizar na \autoref{fig:prototipagemAutenticacaoUsuario} parte da prototipagem das telas relacionadas à autenticação de usuários, dentre elas estão: autenticação de usuário, registro de usuário e recuperação de senha.
+
+\begin{figure}[H]
+    \centering
+    \caption{Prototipagem das Telas Relacionadas a Autenticação}
+    \label{fig:prototipagemAutenticacaoUsuario}
+    \includegraphics[scale=0.24]{./dados/figuras/prototipagem-autenticacao-de-usuario.png}
+    \fonte{Produzido pelo Autor}
+\end{figure}
+
+A \autoref{fig:prototipagemMapPerfil} representa a prototipagem das telas relacionadas aos recursos de mapa e perfil do usuário, dentre elas estão o mapa, a visualização do ponto de pesca, perfil do pescador(a), edição do perfil do pescador(a) e uma futura tela de configuração.
+
+\begin{figure}[H]
+    \centering
+    \caption{Prototipagem do Mapa e Perfil do Usuário}
+    \label{fig:prototipagemMapPerfil}
+    \includegraphics[scale=0.29]{./dados/figuras/prototipagem-map-perfil.png}
+    \fonte{Produzido pelo Autor}
+\end{figure}
+
+A \autoref{fig:prototipagemRegisterSpot} apresenta a prototipagem das telas relacionadas ao registro dos pontos de pesca, dentre elas estão: descrição de riscos, inclusão de imagem, inclusão das iscas usadas e peixes pegos, inclusão de dados finais sobre o ponto.
+
+\begin{figure}[H]
+    \centering
+    \caption{Prototipagem do Registro do Ponto de Pesca}
+    \label{fig:prototipagemRegisterSpot}
+    \includegraphics[scale=0.29]{./dados/figuras/prototipagem-spot-register.png}
+    \fonte{Produzido pelo Autor}
+\end{figure}
+
+
+Pode-se observar na \autoref{fig:prototipagemAutenticacaoUsuarioDark} a prototipagem das telas de autenticação do usuário, destacando o modo escuro. Este que aumenta  usabilidade e cria maior conforto visual, reduzindo a fadiga ocular.
+
+\begin{figure}[H]
+    \centering
+    \caption{Prototipagem das Telas Relacionadas a Autenticação no Modo Escuro}
+    \label{fig:prototipagemAutenticacaoUsuarioDark}
+    \includegraphics[scale=0.30]{./dados/figuras/prototipagem-dark-autenticacao-user.png}
+    \fonte{Produzido pelo Autor}
+\end{figure}
+
+A \autoref{fig:prototipagemMapPerfilDark} exibe a prototipagem das telas de visualização dos pontos de pesca registrados, destacando o modo escuro da interface. Este que pode aumentar de forma significativa a economia no consumo de bateria do dispositivo móvel.
+
+\begin{figure}[H]
+    \centering
+    \caption{Prototipagem do Mapa e Perfil do Usuário no Modo Escuro}
+    \label{fig:prototipagemMapPerfilDark}
+    \includegraphics[scale=0.30]{./dados/figuras/prototipagem-dark-map-perfil.png}
+    \fonte{Produzido pelo Autor}
+\end{figure}
+
+A \autoref{fig:prototipagemSpotRegisterDark} demonstra a prototipagem das telas de registro de pontos de pesca, destacando o modo escuro da interface. Este que busca atender às preferencias individuais e às necessidades de acessibilidade de diferentes usuários.
+
+\begin{figure}[H]
+    \centering
+    \caption{Prototipagem do Registro do Ponto de Pesca no Modo Escuro}
+    \label{fig:prototipagemSpotRegisterDark}
+    \includegraphics[scale=0.30]{./dados/figuras/prototipagem-dark-spot-register.png}
+    \fonte{Produzido pelo Autor}
+\end{figure}
+
+\section{BANCO DE DADOS}
+\label{sec:desenvolvimentobancodedados}
+
+De acordo com a empresa \citeonline{MongoDBModelagem25}, detentora do banco de dados não relacional orientados a documento MongoDB. A criação de padroes de design de esquemas no banco de dados garantem de forma eficiente o armazenamento, a recuperação dos dados e a manipulação dos dados.
+
+O diagrama ilustrado na \autoref{fig:documentacaoBancoDeDados}, representa a estrutura utilizado no banco de dados da aplicação, este que contem suas propriedades junto aos tipos utilizados, bem como sua relação.
+
+\begin{figure}[H]
+    \centering
+    \caption{Documentação do Banco de Dados - MongoDB}
+    \label{fig:documentacaoBancoDeDados}
+    \includegraphics[scale=0.65]{./dados/figuras/documentacao-banco-de-dados.png}
+    \fonte{Produzido pelo Autor}
+\end{figure}

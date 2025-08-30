@@ -1,0 +1,54 @@
+\begin{table}[h!]
+    \centering
+    \caption[Rotas Disponiveis]{Rotas Disponiveis
+    \label{tab:tb-api-fishspot}}
+    \setlength{\extrarowheight}{4pt}
+    \begin{tabular}{|c|l|p{0.35\textwidth}|} 
+        \hline
+        \multicolumn{3}{|c|}{\textbf{Autenticação}} \\
+        \hline
+        \textbf{Método HTTP} & \textbf{Endereço da Rota} & \textbf{Detalhes} \\
+        \hline
+        POST & /auth/register & Registrar usuário no sistema \\
+        \hline
+        POST & /auth/login & Autenticar usuário no sistema \\
+        \hline
+        POST & /auth/is-auth & Valida se o usuário esta autenticado, e consegue usar todos os recursos disponiveis \\
+        \hline
+        POST & /auth/recover-password & Notifica o sistema que o usuário quer alterar a senha \\
+        \hline
+        POST & /auth/validate-recover-token & Valida o token recebido por outros meios pelo usuário \\
+        \hline
+        POST & /auth/change-password & Altera a senha do usuário \\
+        \hline
+
+        % Recursos ---------------
+
+        \multicolumn{3}{|c|}{\textbf{Recursos (Fotos, Imagem e etc)}} \\
+        \hline
+        \textbf{Método HTTP} & \textbf{Endereço da Rota} & \textbf{Detalhes} \\
+        \hline
+        GET & /resources/\{id\} & Consultar na aplicação o recurso relacionado ao identificador informado \\
+        \hline
+        POST & /resources/attach-to-spot & Anexar fotos ou imagens ao ponto de pesca \\
+        \hline
+        POST & /resources/detach-to-spot & Desanexar fotos ou imagens do ponto de pesca \\
+        \hline
+        POST & /resources/attach-to-user & Anexar foto ao perfil do usuário \\
+        \hline
+
+        % Gerenciar Usuario ------------ 
+
+        \multicolumn{3}{|c|}{\textbf{Usuário (Gerenciar Dados)}} \\
+        \hline
+        \textbf{Método HTTP} & \textbf{Endereço da Rota} & \textbf{Detalhes} \\
+        \hline
+        GET & /user & Consultar os dados não sensiveis do usuario \\
+        \hline
+        PUT & /user & Alterar os dados do usuário \\
+        \hline
+
+    \end{tabular}
+    \fonte{Fonte: Produzido pelo Autor}
+\end{table}
+
