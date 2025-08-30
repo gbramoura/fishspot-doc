@@ -8,7 +8,7 @@
 *.blg
 *.dvi
 *.ps
-*.pdf
+
 *.synctex.gz
 *.out
 *.spl
