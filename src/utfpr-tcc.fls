@@ -1,6 +1,6 @@
-PWD c:\Workspace\fishspot-doc
+PWD c:\Workspace\fishspot-doc\src
 INPUT C:\Users\Gabriel\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Workspace\fishspot-doc\utfpr-tcc.tex
+INPUT c:\Workspace\fishspot-doc\src\utfpr-tcc.tex
 OUTPUT utfpr-tcc.log
 INPUT .\configuracoes\utfpr-abntex2.cls
 INPUT configuracoes\utfpr-abntex2.cls
