@@ -26,7 +26,9 @@ O diagrama de classe constitui uma ferramenta muito utilizada para a modelagem e
     \centering
     \caption{Diagrama de Classe}
     \label{fig:casoDeUso}
-    \includegraphics[scale=0.70]{./dados/figuras/diagrama-de-classe.png}
+    \adjustbox{padding=5pt 15pt 5pt 15pt, bgcolor=white}{
+        \includegraphics[scale=0.70]{./dados/figuras/diagrama-de-classe.png}
+    }
     \fonte{\citeonline{DrawIO}}
 \end{figure}
 
@@ -34,25 +36,25 @@ O diagrama de classe constitui uma ferramenta muito utilizada para a modelagem e
 
 De acordo com \citeonline{fernandoCunha2025}, os requisitos funcionais são aqueles que representam funcionalidades às quais estão relacionados a ações dentro da solução proposta. Enquanto os funcionais estão relacionados a ações, os requisitos não funcionais estão relacionados a descrever a forma como serão feitos.
 
-A \autoref{tab:tb-rf-realizar-login} aborda os requisitos para a realização do login, onde o pescador informa as credenciais de acesso, e recebe permissões para navegação dentro da aplicação. Além disso, são descritos seus requisitos não funcionais atrelados.
+A \autoref{qua:quadro-requisitos-autenticacao-login} aborda os requisitos para a realização do login, onde o pescador informa as credenciais de acesso, e recebe permissões para navegação dentro da aplicação. Além disso, são descritos seus requisitos não funcionais atrelados.
 
-\input{./dados/tabelas/rf-realizar-login}
+\input{./dados/quadros/qua-req-auth-usuario.tex}
 
-A \autoref{tab:tb-rf-visualizar-pontos-pesca} descreve os requisitos para visualizar um ponto de pesca, onde o usuário visualiza todos os pontos de pesca cadastrados, bem como seus detalhes. São detalhados também os requisitos não funcionais relacionados, dentre eles visualização do mapa, cálculos de geolocalização, localização atual do usuário e etc.
+A \autoref{qua:quadro-requisitos-pontos-pesca} descreve os requisitos para visualizar um ponto de pesca, onde o usuário visualiza todos os pontos de pesca cadastrados, bem como seus detalhes. São detalhados também os requisitos não funcionais relacionados, dentre eles visualização do mapa, cálculos de geolocalização, localização atual do usuário e etc.
 
-\input{./dados/tabelas/rf-visualizar-pontos-de-pesca}
+\input{./dados/quadros/qua-req-pontos-pesca.tex}
 
-Os requisitos relacionados ao cadastro de um novo ponto de pesca é representado pela \autoref{tab:tb-rf-novo-registro-pesca}, onde detalha as principais características da funcionalidade, também como seus requisitos não funcionais.
+Os requisitos relacionados ao cadastro de um novo ponto de pesca é representado pela \autoref{qua:quadro-requisitos-registro-pesca}, onde detalha as principais características da funcionalidade, também como seus requisitos não funcionais.
 
-\input{./dados/tabelas/rf-novo-registro-de-pesca}
+\input{./dados/quadros/qua-req-registro-pesca.tex}
 
-Na \autoref{tab:tb-rf-gerenciar-usuario}, os requisitos para gerenciar o usuário são descritos. Nesta funcionalidade é feito o gerenciamento dos dados do usuário, o gerenciamento esta atrelado a incluir, editar e também visualizar os dados dos pescadores.
+Na \autoref{qua:quadro-requisitos-gerenciar-usuario}, os requisitos para gerenciar o usuário são descritos. Nesta funcionalidade é feito o gerenciamento dos dados do usuário, o gerenciamento esta atrelado a incluir, editar e também visualizar os dados dos pescadores.
 
-\input{./dados/tabelas/rf-gerenciar-usuario}
+\input{./dados/quadros/qua-req-gerenciar-usuario.tex}
 
-A \autoref{tab:tb-rnf-autonomos} descreve os requisitos não-funcionais autônomos, estes que não são totalmente relacionados a uma funcionalidade e sim focados a outros aspectos da aplicação.
+A \autoref{qua:quadro-requisitos-autonomos} descreve os requisitos não-funcionais autônomos, estes que não são totalmente relacionados a uma funcionalidade e sim focados a outros aspectos da aplicação.
 
-\input{./dados/tabelas/rnf-autonomos}
+\input{./dados/quadros/qua-req-autonomos.tex}
 
 \section{DIAGRAMA DE ARQUITETURA DE SOFTWARE}
 \label{sec:diagramadearquiteturadesoftware}
