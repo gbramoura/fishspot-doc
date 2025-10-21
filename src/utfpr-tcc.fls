@@ -470,9 +470,6 @@ INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aess10.
 INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aess10.vf
 INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmss10.tfm
 INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aessi10.tfm
-INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aessi10.vf
-INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssi10.tfm
 INPUT .\estrutura\textuais\justificativa.tex
 INPUT .\estrutura\textuais\justificativa.tex
 OUTPUT estrutura\textuais\justificativa.aux
@@ -510,6 +507,9 @@ INPUT .\dados\figuras\fish-friender-app-feed.png
 INPUT .\dados\figuras\fish-friender-app-feed.png
 INPUT .\dados\figuras\fish-friender-app-feed.png
 INPUT .\dados\figuras\fish-friender-app-feed.png
+INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\tfm\public\ae\aessi10.tfm
+INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\vf\public\ae\aessi10.vf
+INPUT C:\Users\Gabriel\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssi10.tfm
 INPUT .\estrutura\textuais\desenvolvimento.tex
 INPUT .\estrutura\textuais\desenvolvimento.tex
 OUTPUT estrutura\textuais\desenvolvimento.aux
