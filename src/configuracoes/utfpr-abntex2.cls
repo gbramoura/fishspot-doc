@@ -40,13 +40,13 @@
     a4paper,                  % Tamanho do papel.
     sumario=tradicional,      % Seleciona o sumário tradicional
 % Opções do pacote babel
-    brazil,                   % Idioma do documento
+    brazilian,                   % Idioma do documento
 }{abntex2}
 
 \ProcessOptions\relax
 \LoadClass{abntex2}
 
-\RequirePackage[brazilian, hyperpageref]{backref}       % Produzir índice nas referências
+% \RequirePackage[brazilian, hyperpageref]{backref}       % Produzir índice nas referências
 \RequirePackage{makeidx}                                % Produzir índice remissivo de palavras
 \RequirePackage{chngcntr}
 
@@ -58,25 +58,25 @@
 \frenchspacing
 
 % Configurações do pacote backref usado sem a opção hyperpageref de backref
-\renewcommand{\backrefpagesname}{Citado na(s) p\'agina(s):~}
+% \renewcommand{\backrefpagesname}{Citado na(s) p\'agina(s):~}
 
 % Texto padrão antes do número das páginas
-\renewcommand{\backref}{}
+% \renewcommand{\backref}{}
 
 % Define as listas de item compactas (sem espaçamento entre os itens)
 \setlist{noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt}
 
 % Define os textos da citação
-\renewcommand*{\backrefalt}[4]
-{%
-    \ifcase #1
-        Nenhuma cita\c{c}\~ao no texto.
-    \or
-        Citado na p\'agina #2.
-    \else
-        Citado #1 vezes nas p\'aginas #2.
-    \fi
-}
+% \renewcommand*{\backrefalt}[4]
+% {%
+%     \ifcase #1
+%         Nenhuma cita\c{c}\~ao no texto.
+%     \or
+%         Citado na p\'agina #2.
+%     \else
+%         Citado #1 vezes nas p\'aginas #2.
+%     \fi
+% }
 
 % Define a numeração das equações de forma sequencial
 \counterwithout{equation}{chapter}

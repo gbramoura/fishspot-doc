@@ -1,15 +1,25 @@
-% REFERÊNCIAS------------------------------------------------------------------
-\usepackage[%
-    alf,
-    abnt-emphasize=bf,
-    bibjustif,
-    recuo=0cm,
-    abnt-url-package=url,       % Utiliza o pacote url
-    abnt-refinfo=yes,           % Utiliza o estilo bibliográfico abnt-refinfo
-    abnt-etal-cite=3,
-    abnt-etal-list=3,
-    abnt-thesis-year=final
-]{abntex2cite}                  % Configura as citações bibliográficas conforme a norma ABNT
+% % REFERÊNCIAS------------------------------------------------------------------
+% \usepackage[%
+%     alf,
+%     abnt-emphasize=bf,
+%     bibjustif,
+%     recuo=0cm,
+%     abnt-url-package=url,       % Utiliza o pacote url
+%     abnt-refinfo=yes,           % Utiliza o estilo bibliográfico abnt-refinfo
+%     abnt-etal-cite=3,
+%     abnt-etal-list=3,
+%     abnt-thesis-year=final
+% ]{abntex2cite}                  % Configura as citações bibliográficas conforme a norma ABNT
+
+\usepackage[
+    style=abnt,
+    backref=true,
+    backend=biber,  % Motor de processamento moderno
+    % citeapi=true,   % Compatibilidade com comandos de citação
+    extrayear=true
+]{biblatex}
+
+\addbibresource{./base-referencias.bib}
 
 % PACOTES----------------------------------------------------------------------
 \usepackage[utf8]{inputenc}                                 % Codificação do documento
